@@ -1,11 +1,19 @@
 
 .App{
     height: 750px;
-    margin: 3%;
+    
+    background-image: url("../src/Images/thumb-350-587508.png"); 
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    
 }
 
 
-.header{background-color: aquamarine;}
+.header{
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    background-color: aquamarine;}
 
 .mainWindow{
     background-color: blueviolet;
@@ -13,15 +21,23 @@
 }
 
 .employeeWindows{
+    border: 3px solid black;
     display: flex;
     flex-direction: row;
     margin: 2%;
-    background-color: brown;
+    background-color: gray;
     height: 20%;
 }
 
-.employeeImage{
+.avatarPictures{
     height: 100%;
-    width: 35%;
+    width: 10%;
+    border-radius: 200px;
     background-color: burlywood;
+
+}
+.dataArea{
+    position: relative;
+    left: 1%;
+    top: -5%;
 }

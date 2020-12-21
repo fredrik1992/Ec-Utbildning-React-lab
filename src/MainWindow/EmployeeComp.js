@@ -1,16 +1,35 @@
-import react from "react";
 
 
-let EmployeeComp = (EmployeesData) => {
+
+let EmployeeComp = (props) => {
+
+    console.log (props)
+    
+   
+    
+    let test = ["hej","då"]
     return(
+        
+       
+        //måste mappa den tror jag
         <div className = "employeeWindows">
-            <image className="employeeImage" src = {EmployeesData.avatar} ></image>
+            <img src = {props.avatar} className ="avatarPictures"></img>
+            <div className = "dataArea">
+            <p>Name: {props.name}</p>
+            <p>Email: {props.email}</p>
+            <p>Phone: {props.phone}</p>
+            <p>Skills: {props.skills}</p>
+            
+
+
+            </div>
             
             
-            <p>{EmployeesData.name}</p>
-            <p>{EmployeesData.email}</p>
-            <p>{EmployeesData.phone}</p>
-            <p>{EmployeesData.skills}</p>
+            
+       
+          
+            
+            
 
         </div>
         
