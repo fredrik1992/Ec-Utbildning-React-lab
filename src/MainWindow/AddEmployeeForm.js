@@ -15,11 +15,13 @@ function Form(props) {
             phone.current.value = ""
             skills.current.value = ""
         }
+
         function myChangeHandler   (parameter)  {
            
           if (parameter == "addData"){
+              console.log("in add data")
                 props.addData( {
-                
+                    
                     name: username.current.value,
                     email: email.current.value,
                     phone: phone.current.value,
@@ -33,10 +35,11 @@ function Form(props) {
                     email: email.current.value,
                     phone: phone.current.value,
                     skills : skills.current.value })}
-                
+               
                 clearInputs()
+                
                 props.closeForm()
-                props.saveData()}
+               }
 
 
 
