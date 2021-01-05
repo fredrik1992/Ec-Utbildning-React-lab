@@ -5,6 +5,8 @@ import HeaderComp from "../HeaderComp";
 import Form from "../MainWindow/AddEmployeeForm";
 
 function HandleEmployeeData() {
+  let index =0
+  let indexend = 3
   let count = 1;
   let nameOfElementToChange = "";
 
@@ -124,6 +126,7 @@ function HandleEmployeeData() {
       </button>
 
       <Form
+        
         closeForm={showFormOrnot}
         addData={addToEmployees}
         changeOfState={changeStateOfElement}
